@@ -14,8 +14,6 @@ body {
     align-items: center;
     overflow: hidden;
 }
-
-/* Background Blur when popup is active */
 .main.active {
     filter: blur(15px);
     pointer-events: none;
@@ -72,11 +70,13 @@ body {
     color: blue;
 }
 
-/* Popup Info */
+
 .popup-info {
     position: absolute;
     top: 50%;
     left: 50%;
+    display: flex;
+    flex-direction: column;
     transform: translate(-50%, -50%) scale(.9);
     width: 500px;
     background: #fff;
@@ -131,7 +131,7 @@ body {
 .exit-btn { background: #ccc; color: #333; }
 .continue-btn { background: blue; color: #fff; }
 
-/* Quiz Section */
+
 .container {
     display: none;
     width: 100%;
@@ -151,7 +151,7 @@ body {
 }
 
 .question {
-    display: none; /* Hidden by default for "one by one" logic */
+    display: none; 
 }
 
 .question.active {
