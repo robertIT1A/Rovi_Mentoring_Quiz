@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="home">
+        <div class="content">
+          <h1>Quiz Website</h1>
+          <p>
+            Welcome to my quiz website, where learning meets fun! Test your knowledge, challenge yourself, and enjoy interactive quizzes across a wide range of topics. Whether you’re learning something new or just having fun, there’s always a quiz waiting for you.
+          </p>
+          <button class="start">Start Quiz</button>
+        </div>
+      </section>
+
+      
+      </div>
+      <div class="container">
+        <section class="quiz">
+          <div class="question">
+            <p>How many times can you subtract 10 from 100?</p>
+            <div class="answer">
+              <button class="choice" data-correct="true">A. 1</button>
+              <button class="choice">B. 5</button>
+              <button class="choice">C. 10</button>
+              <button class="choice">D. Unlimited</button>
+              <!-- A) 1 kase 100 − 10 = 90 so hindi na sya 100, gets?? -->
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              If you overtake the person in 2nd place in a race, what place are
+              you in?
+            </p>
+            <div class="answer">
+              <button class="choice">A. 1st</button>
+              <button class="choice" data-correct="true">B. 2nd</button>
+              <button class="choice">C. 3rd</button>
+              <button class="choice">D. Last</button>
+              <!-- B) 2nd -->
+            </div>
+          </div>
+          <div class="question">
+            <p>How many months have 28 days?</p>
+            <div class="answer">
+              <button class="choice">A. 1</button>
+              <button class="choice">B. 2</button>
+              <button class="choice">C. 11</button>
+              <button class="choice" data-correct="true">D. 12</button>
+              <!-- D) 12 Every month has 28-->
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              If it takes 5 machines 5 minutes to make 5 items, how long would 100
+              machines take to make 100 items?
+            </p>
+            <div class="answer">
+              <button class="choice" data-correct="true">A. 5 minutes</button>
+              <button class="choice">B. 10 minutes</button>
+              <button class="choice">C. 50 minutes</button>
+              <button class="choice">D. 100 minutes</button>
+              <!-- a) 5 minutes -->
+            </div>
+          </div>
+
+          <div class="question">
+            <p>May gusto ka ba sakin💕 o wala😭⁉️</p>
+            <div class="answer">
+              <button id="Meron">😍 Meron</button>
+              <div id="overlay" onclick="hideImage()"></div>
+              <img
+                id="animalImage"
+                src="cutecouple.gif"
+                alt="Animal"
+                onclick="hideImage()"
+              />
+
+              <button id="Wala">🙅‍♀️ Wala</button>
+              <div id="overlay" onclick="hideImage()"></div>
+              <img
+                id="sadImage"
+                src="sad-sad-face.gif"
+                alt="Animal"
+                onclick="hideImage()"
+              />
+            </div>
+          </div>
+          <button id="done" class="done">Done</button>
+        </section>
+        
+      </div>
+    </main>
+    <div class="popup-info">
+        <h2>Guide</h2>
+        <span class="info">1. Read the question carefully</span>
+        <span class="info">2. Choose the best answer</span>
+        <span class="info">3. Strictly no erasures</span>
+        <span class="info">4. Wrong spelling, wrong</span>
+        <span class="info">5. Dapat malakas ka kay Lord</span>
+        <div class="btn">
+          <button class="info-btn exit-btn">Exit Quiz</button>
+          <a href="#" class="info-btn continue-btn">Continue</a>
+        </div>
+  </body>
+  <script src="main.js"></script>
+</html>
